@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<LENS>
+	<TABLE NAME="USERS" FIELDS="ID,NAME,LOGIN,EMAIL" CFIELDS="1,0,0,0">
+		<RECORD>
+			<ID>1</ID>
+			<NAME>peter</NAME>
+			<LOGIN>peter</LOGIN>
+			<EMAIL>peter@peter.de</EMAIL>
+		</RECORD>
+		<RECORD>
+			<ID>2</ID>
+			<NAME>uschi</NAME>
+			<LOGIN>uschi</LOGIN>
+			<EMAIL>uschi@uschi.de</EMAIL>
+		</RECORD>
+	</TABLE>
+</LENS>

@@ -1,0 +1,82 @@
+h1 {
+  text-align: center
+}
+
+.toggles{ 
+
+  max-width: 95%;
+  max-height: 60%;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+  
+  
+}
+.name{
+  text-align: center;
+  color: #1e9b5a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.portfolio-button{
+    color: #FFF;
+  border: 2px solid #e3e3e3;
+  border-radius: 10px; 
+  background-color: #1e9b5a;
+  
+  padding: 10px;
+  width: auto;
+  height: auto;
+  
+  margin: 5px auto !important; 
+  
+}
+
+
+
+portfolio-button:hover {
+color: #000;
+  background-color: #FFFFFF;
+  border: 1px solid #000
+}
+
+.covers{
+    display: flex;
+    flex-wrap: wrap; /* Creates rows */
+    margin-left: 5%;
+    margin-right: 5%;
+
+    
+    
+  div {
+    margin: 2%;
+    border: 1px solid #1e9b5a;
+  }
+  
+  img {
+    border: 1px solid #ddd; /*Gray border */
+    border-radius: 4px;  /*Rounded border */
+    padding: 5px; 
+
+  }
+  #audio{
+    width: 160px;
+  }
+
+
+  
+}
+.doc{
+    height: 300px;
+    width: 250px;
+  }
+
+  .border{
+    box-shadow: 3px 3px 3px 3px #555555;
+    margin: 10px;
+  }
+
+ 

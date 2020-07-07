@@ -1,0 +1,1504 @@
+<html>
+<head>
+<title>Docs For Class AbstractDB</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">anydb</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_anydb.html" class="menu">class tree: anydb</a> ]
+		  [ <a href="../elementindex_anydb.html" class="menu">index: anydb</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_anydb.html">anydb</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../anydb/_base_AbstractDB_php.html">		AbstractDB.php
+		</a><br>
+			<a href="../anydb/_dbs_ADOdbDB_php.html">		ADOdbDB.php
+		</a><br>
+			<a href="../anydb/_anyDB_php.html">		anyDB.php
+		</a><br>
+			<a href="../anydb/_base_BasicDB_php.html">		BasicDB.php
+		</a><br>
+			<a href="../anydb/_addon_DBHelper_php.html">		DBHelper.php
+		</a><br>
+			<a href="../anydb/_dbs_DbxDB_php.html">		DbxDB.php
+		</a><br>
+			<a href="../anydb/_addon_Exporter_php.html">		Exporter.php
+		</a><br>
+			<a href="../anydb/_dbs_MetabaseDB_php.html">		MetabaseDB.php
+		</a><br>
+			<a href="../anydb/_dbs_phplib_myDB_SQL_php.html">		myDB_SQL.php
+		</a><br>
+			<a href="../anydb/_dbs_MysqlDB_php.html">		MysqlDB.php
+		</a><br>
+			<a href="../anydb/_addon_PageWidget_php.html">		PageWidget.php
+		</a><br>
+			<a href="../anydb/_dbs_PearDB_php.html">		PearDB.php
+		</a><br>
+			<a href="../anydb/_dbs_PhplibDB_php.html">		PhplibDB.php
+		</a><br>
+			<a href="../anydb/_dbs_PostgresDB_php.html">		PostgresDB.php
+		</a><br>
+			<a href="../anydb/_addon_QueryHelper_php.html">		QueryHelper.php
+		</a><br>
+			<a href="../anydb/_dbs_SQLiteDB_php.html">		SQLiteDB.php
+		</a><br>
+			<a href="../anydb/_base_UtilityClass_php.html">		UtilityClass.php
+		</a><br>
+	  </div><br />
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../anydb/AbstractDB.html">AbstractDB</a><br />
+	    		<a href="../anydb/ADOdbDB.html">ADOdbDB</a><br />
+	    		<a href="../anydb/anyDB.html">anyDB</a><br />
+	    		<a href="../anydb/BasicDB.html">BasicDB</a><br />
+	    		<a href="../anydb/DBHelper.html">DBHelper</a><br />
+	    		<a href="../anydb/DbxDB.html">DbxDB</a><br />
+	    		<a href="../anydb/Exporter.html">Exporter</a><br />
+	    		<a href="../anydb/MetabaseDB.html">MetabaseDB</a><br />
+	    		<a href="../anydb/myDB_Sql.html">myDB_Sql</a><br />
+	    		<a href="../anydb/MysqlDB.html">MysqlDB</a><br />
+	    		<a href="../anydb/PageWidget.html">PageWidget</a><br />
+	    		<a href="../anydb/PearDB.html">PearDB</a><br />
+	    		<a href="../anydb/PhplibDB.html">PhplibDB</a><br />
+	    		<a href="../anydb/PostgresDB.html">PostgresDB</a><br />
+	    		<a href="../anydb/QueryHelper.html">QueryHelper</a><br />
+	    		<a href="../anydb/SQLiteDB.html">SQLiteDB</a><br />
+	    		<a href="../anydb/UtilityClass.html">UtilityClass</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: AbstractDB</h1>
+Source Location: Program_Root/base/AbstractDB.php<br /><br />
+
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre><a href="../anydb/UtilityClass.html">UtilityClass</a>
+   |
+   --AbstractDB</pre><br />
+<div class="description">Abstract base class for db access</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+                                  <li>Lennart Groetzbach &lt;<a href="mailto:lennartg@web.de">mailto:lennartg@web.de</a>&gt;</li>
+            </ul>
+
+
+
+
+            
+          
+          
+<h4>Version:</h4>
+<ul>
+  <li>0.9  - 2003/xx/xx</li>
+</ul>
+
+<h4>Copyright:</h4>
+<ul>
+  <li>Lennart Groetzbach &lt;lennartg@web.de&gt; - distributed under the LGPL</li>
+</ul>
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../anydb/AbstractDB.html#var$database">$database</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$db">$db</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$error">$error</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$host">$host</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$lastQuery">$lastQuery</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$password">$password</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$persistent">$persistent</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$prefResType">$prefResType</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$result">$result</a></li>
+    <li><a href="../anydb/AbstractDB.html#var$user">$user</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../anydb/AbstractDB.html#methodAbstractDB">AbstractDB</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodaffectedRows">affectedRows</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodconnect">connect</a></li>
+    <li><a href="../anydb/AbstractDB.html#methoddisconnect">disconnect</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodescapeStr">escapeStr</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodexecute">execute</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodfree">free</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetAll">getAll</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetColumn">getColumn</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetDbType">getDbType</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetIdentifier">getIdentifier</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetNext">getNext</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetTables">getTables</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetValue">getValue</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodgetVersion">getVersion</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodnumRows">numRows</a></li>
+    <li><a href="../anydb/AbstractDB.html#methodquery">query</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+<td valign="top">
+<h3>Child classes:</h3>
+<div class="tags">
+<dl>
+<dt><a href="../anydb/BasicDB.html">BasicDB</a></dt>
+	<dd>Essential functionality for the db class</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+<h4>Class: <a href="../anydb/UtilityClass.html">UtilityClass</a></h4>
+<dl>
+    <dt>
+    <a href="../anydb/UtilityClass.html#methodUtilityClass">UtilityClass::UtilityClass()</a>
+
+  </dt>
+  <dd>
+    
+  </dd>
+  </dl>
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 63]<br />
+Abstract base class for db access<br /><br /><p>This class defines the interface for all the implementing layers.</p><p>Don't call or instanciate this class.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>0.9  - 2003/xx/xx</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Lennart Groetzbach &lt;lennartg@web.de&gt; - distributed under the LGPL</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Lennart Groetzbach &lt;<a href="mailto:lennartg@web.de">mailto:lennartg@web.de</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://www.phpclasses.org/anydb">Visit www.phpclasses.org for the latest version</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$database"></a>
+	<p></p>
+	<h4>$database = <span class="value">&nbsp;''</span></h4>
+	<p>[line 97]</p>
+  db name<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>String</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$db"></a>
+	<p></p>
+	<h4>$db = <span class="value">&nbsp;null</span></h4>
+	<p>[line 121]</p>
+  database resource<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>Mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$error"></a>
+	<p></p>
+	<h4>$error = <span class="value">&nbsp;''</span></h4>
+	<p>[line 161]</p>
+  error string of the last error that occured<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>String</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$host"></a>
+	<p></p>
+	<h4>$host = <span class="value">&nbsp;''</span></h4>
+	<p>[line 90]</p>
+  db host name<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>String</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$lastQuery"></a>
+	<p></p>
+	<h4>$lastQuery = <span class="value">&nbsp;''</span></h4>
+	<p>[line 145]</p>
+  the last submitted query<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>String</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$password"></a>
+	<p></p>
+	<h4>$password = <span class="value">&nbsp;''</span></h4>
+	<p>[line 113]</p>
+  user password<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>String</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$persistent"></a>
+	<p></p>
+	<h4>$persistent = <span class="value"></span></h4>
+	<p>[line 153]</p>
+  use a persistent db connection?<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>Boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$prefResType"></a>
+	<p></p>
+	<h4>$prefResType = <span class="value"></span></h4>
+	<p>[line 137]</p>
+  the preferred result type<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>Integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$result"></a>
+	<p></p>
+	<h4>$result = <span class="value">&nbsp;null</span></h4>
+	<p>[line 129]</p>
+  result resource<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>Mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$user"></a>
+	<p></p>
+	<h4>$user = <span class="value">&nbsp;''</span></h4>
+	<p>[line 105]</p>
+  user name<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>String</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="methodAbstractDB"></a>
+	<h3>constructor AbstractDB <span class="smalllinenumber">[line 176]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>AbstractDB AbstractDB(
+String
+$libraryPath, String
+$dbType, [Integer
+$preferredResType = ANYDB_RES_ASSOC])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$libraryPath</b>&nbsp;&nbsp;</td>
+        <td>path to the database abstraction layer</td>
+      </tr>
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$dbType</b>&nbsp;&nbsp;</td>
+        <td>identifier of the db type</td>
+      </tr>
+          <tr>
+        <td class="type">Integer&nbsp;&nbsp;</td>
+        <td><b>$preferredResType</b>&nbsp;&nbsp;</td>
+        <td>the preferred result type</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaffectedRows"></a>
+	<h3>method affectedRows <span class="smalllinenumber">[line 329]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed affectedRows(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns how many rows were affected by the last statement<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Integer or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodaffectedRows">ADOdbDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/DbxDB.html#methodaffectedRows">DbxDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methodaffectedRows">MetabaseDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MysqlDB.html#methodaffectedRows">MysqlDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PearDB.html#methodaffectedRows">PearDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PhplibDB.html#methodaffectedRows">PhplibDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PostgresDB.html#methodaffectedRows">PostgresDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methodaffectedRows">SQLiteDB::affectedRows()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodconnect"></a>
+	<h3>method connect <span class="smalllinenumber">[line 197]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Boolean connect(
+String
+$host, String
+$db, String
+$user, String
+$password, [mixed
+$persistent = false], Boolean
+$persistent
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Connects to the db<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>TRUE, if successful</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodconnect">BasicDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodconnect">ADOdbDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/DbxDB.html#methodconnect">DbxDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methodconnect">MetabaseDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MysqlDB.html#methodconnect">MysqlDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PearDB.html#methodconnect">PearDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PhplibDB.html#methodconnect">PhplibDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PostgresDB.html#methodconnect">PostgresDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methodconnect">SQLiteDB::connect()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$host</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$db</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$user</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$password</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">Boolean&nbsp;&nbsp;</td>
+        <td><b>$persistent
+</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddisconnect"></a>
+	<h3>method disconnect <span class="smalllinenumber">[line 209]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Boolean disconnect(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Closes the db connection<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>TRUE, if successful</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methoddisconnect">ADOdbDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/DbxDB.html#methoddisconnect">DbxDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methoddisconnect">MetabaseDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MysqlDB.html#methoddisconnect">MysqlDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PearDB.html#methoddisconnect">PearDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PhplibDB.html#methoddisconnect">PhplibDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PostgresDB.html#methoddisconnect">PostgresDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methoddisconnect">SQLiteDB::disconnect()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodescapeStr"></a>
+	<h3>method escapeStr <span class="smalllinenumber">[line 379]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed escapeStr(
+Mixed
+$str)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Modifies a string to make it secure to add to the db<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>String or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodescapeStr">BasicDB::escapeStr()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">Mixed&nbsp;&nbsp;</td>
+        <td><b>$str</b>&nbsp;&nbsp;</td>
+        <td>a string</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexecute"></a>
+	<h3>method execute <span class="smalllinenumber">[line 293]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed execute(
+String
+$query, [Integer
+$resultType = ANYDB_PREDEFINED_VALUE])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Executes a statement and returns the result table<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>2-dimensional array or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodexecute">BasicDB::execute()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>a sql statement</td>
+      </tr>
+          <tr>
+        <td class="type">Integer&nbsp;&nbsp;</td>
+        <td><b>$resultType</b>&nbsp;&nbsp;</td>
+        <td>should the array have numeric, associative keys, or both</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodfree"></a>
+	<h3>method free <span class="smalllinenumber">[line 305]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed free(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Frees the memory from the result set<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>TRUE, if successful</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodfree">BasicDB::free()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MysqlDB.html#methodfree">MysqlDB::free()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PostgresDB.html#methodfree">PostgresDB::free()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methodfree">SQLiteDB::free()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAll"></a>
+	<h3>method getAll <span class="smalllinenumber">[line 252]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed getAll(
+[Integer
+$resultType = ANYDB_PREDEFINED_VALUE])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the resulting table in an 2-dimensional array<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>2-dimensional array or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodgetAll">BasicDB::getAll()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodgetAll">ADOdbDB::getAll()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PearDB.html#methodgetAll">PearDB::getAll()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">Integer&nbsp;&nbsp;</td>
+        <td><b>$resultType</b>&nbsp;&nbsp;</td>
+        <td>should the array have numeric, associative keys, or both</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetColumn"></a>
+	<h3>method getColumn <span class="smalllinenumber">[line 278]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed getColumn(
+[Integer
+$resultType = ANYDB_PREDEFINED_VALUE])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a result column after an apropriate sql statement<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>1-dimensional array or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodgetColumn">BasicDB::getColumn()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodgetColumn">ADOdbDB::getColumn()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methodgetColumn">MetabaseDB::getColumn()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">Integer&nbsp;&nbsp;</td>
+        <td><b>$resultType</b>&nbsp;&nbsp;</td>
+        <td>should the array have numeric, associative keys, or both</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDbType"></a>
+	<h3>method getDbType <span class="smalllinenumber">[line 353]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String getDbType(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the db type identifier<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodgetDbType">BasicDB::getDbType()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetIdentifier"></a>
+	<h3>method getIdentifier <span class="smalllinenumber">[line 341]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed getIdentifier(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns how many rows were affected by the last statement<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>String or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodgetIdentifier">BasicDB::getIdentifier()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PhplibDB.html#methodgetIdentifier">PhplibDB::getIdentifier()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetNext"></a>
+	<h3>method getNext <span class="smalllinenumber">[line 238]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed getNext(
+[Integer
+$resultType = ANYDB_PREDEFINED_VALUE])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the next row in an array<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>1-dimensional array or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodgetNext">ADOdbDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/DbxDB.html#methodgetNext">DbxDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methodgetNext">MetabaseDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MysqlDB.html#methodgetNext">MysqlDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PearDB.html#methodgetNext">PearDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PhplibDB.html#methodgetNext">PhplibDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PostgresDB.html#methodgetNext">PostgresDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methodgetNext">SQLiteDB::getNext()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">Integer&nbsp;&nbsp;</td>
+        <td><b>$resultType</b>&nbsp;&nbsp;</td>
+        <td>should the array have numeric, associative keys, or both</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetTables"></a>
+	<h3>method getTables <span class="smalllinenumber">[line 391]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed getTables(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the table names of the current db<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Array or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodgetTables">BasicDB::getTables()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValue"></a>
+	<h3>method getValue <span class="smalllinenumber">[line 264]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed getValue(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a single value after an apropriate sql statement<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>String or FALSE</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodgetValue">BasicDB::getValue()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodgetValue">ADOdbDB::getValue()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methodgetValue">MetabaseDB::getValue()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methodgetValue">SQLiteDB::getValue()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetVersion"></a>
+	<h3>method getVersion <span class="smalllinenumber">[line 365]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Integer getVersion(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the current version<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodgetVersion">BasicDB::getVersion()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnumRows"></a>
+	<h3>method numRows <span class="smalllinenumber">[line 317]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Mixed numRows(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns how many rows are in the result set<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>TRUE, if successful</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodnumRows">ADOdbDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/DbxDB.html#methodnumRows">DbxDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methodnumRows">MetabaseDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MysqlDB.html#methodnumRows">MysqlDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PearDB.html#methodnumRows">PearDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PhplibDB.html#methodnumRows">PhplibDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PostgresDB.html#methodnumRows">PostgresDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methodnumRows">SQLiteDB::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodquery"></a>
+	<h3>method query <span class="smalllinenumber">[line 224]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Boolean query(
+mixed
+$query, [mixed
+$cacheTime = ANYDB_PREDEFINED_VALUE], String
+$query
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Submits an sql statement to the db<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>TRUE, if successful</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>abstract:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../anydb/BasicDB.html#methodquery">BasicDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/ADOdbDB.html#methodquery">ADOdbDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/DbxDB.html#methodquery">DbxDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MetabaseDB.html#methodquery">MetabaseDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/MysqlDB.html#methodquery">MysqlDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PearDB.html#methodquery">PearDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PhplibDB.html#methodquery">PhplibDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/PostgresDB.html#methodquery">PostgresDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../anydb/SQLiteDB.html#methodquery">SQLiteDB::query()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$query
+</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon,  8 Sep 2003 23:31:40 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-Agent:*
+Disallow:
+
+sitemap:https://www.brookefieldhospital.com/sitemap.xml

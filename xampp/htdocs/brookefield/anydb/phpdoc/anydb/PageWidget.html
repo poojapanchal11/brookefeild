@@ -1,0 +1,609 @@
+<html>
+<head>
+<title>Docs For Class PageWidget</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">anydb</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_anydb.html" class="menu">class tree: anydb</a> ]
+		  [ <a href="../elementindex_anydb.html" class="menu">index: anydb</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_anydb.html">anydb</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../anydb/_base_AbstractDB_php.html">		AbstractDB.php
+		</a><br>
+			<a href="../anydb/_dbs_ADOdbDB_php.html">		ADOdbDB.php
+		</a><br>
+			<a href="../anydb/_anyDB_php.html">		anyDB.php
+		</a><br>
+			<a href="../anydb/_base_BasicDB_php.html">		BasicDB.php
+		</a><br>
+			<a href="../anydb/_addon_DBHelper_php.html">		DBHelper.php
+		</a><br>
+			<a href="../anydb/_dbs_DbxDB_php.html">		DbxDB.php
+		</a><br>
+			<a href="../anydb/_addon_Exporter_php.html">		Exporter.php
+		</a><br>
+			<a href="../anydb/_dbs_MetabaseDB_php.html">		MetabaseDB.php
+		</a><br>
+			<a href="../anydb/_dbs_phplib_myDB_SQL_php.html">		myDB_SQL.php
+		</a><br>
+			<a href="../anydb/_dbs_MysqlDB_php.html">		MysqlDB.php
+		</a><br>
+			<a href="../anydb/_addon_PageWidget_php.html">		PageWidget.php
+		</a><br>
+			<a href="../anydb/_dbs_PearDB_php.html">		PearDB.php
+		</a><br>
+			<a href="../anydb/_dbs_PhplibDB_php.html">		PhplibDB.php
+		</a><br>
+			<a href="../anydb/_dbs_PostgresDB_php.html">		PostgresDB.php
+		</a><br>
+			<a href="../anydb/_addon_QueryHelper_php.html">		QueryHelper.php
+		</a><br>
+			<a href="../anydb/_dbs_SQLiteDB_php.html">		SQLiteDB.php
+		</a><br>
+			<a href="../anydb/_base_UtilityClass_php.html">		UtilityClass.php
+		</a><br>
+	  </div><br />
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../anydb/AbstractDB.html">AbstractDB</a><br />
+	    		<a href="../anydb/ADOdbDB.html">ADOdbDB</a><br />
+	    		<a href="../anydb/anyDB.html">anyDB</a><br />
+	    		<a href="../anydb/BasicDB.html">BasicDB</a><br />
+	    		<a href="../anydb/DBHelper.html">DBHelper</a><br />
+	    		<a href="../anydb/DbxDB.html">DbxDB</a><br />
+	    		<a href="../anydb/Exporter.html">Exporter</a><br />
+	    		<a href="../anydb/MetabaseDB.html">MetabaseDB</a><br />
+	    		<a href="../anydb/myDB_Sql.html">myDB_Sql</a><br />
+	    		<a href="../anydb/MysqlDB.html">MysqlDB</a><br />
+	    		<a href="../anydb/PageWidget.html">PageWidget</a><br />
+	    		<a href="../anydb/PearDB.html">PearDB</a><br />
+	    		<a href="../anydb/PhplibDB.html">PhplibDB</a><br />
+	    		<a href="../anydb/PostgresDB.html">PostgresDB</a><br />
+	    		<a href="../anydb/QueryHelper.html">QueryHelper</a><br />
+	    		<a href="../anydb/SQLiteDB.html">SQLiteDB</a><br />
+	    		<a href="../anydb/UtilityClass.html">UtilityClass</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: PageWidget</h1>
+Source Location: Program_Root/addon/PageWidget.php<br /><br />
+
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Widget class for anyDB</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+                            <li>Lennart Groetzbach &lt;<a href="mailto:lennartg@web.de">mailto:lennartg@web.de</a>&gt;</li>
+            </ul>
+
+
+
+
+    
+              
+          
+<h4>Version:</h4>
+<ul>
+  <li>2003/09/08</li>
+</ul>
+
+<h4>Copyright:</h4>
+<ul>
+  <li>Lennart Groetzbach &lt;lennartg@web.de&gt; - distributed under the LGPL</li>
+</ul>
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../anydb/PageWidget.html#var$end">$end</a></li>
+    <li><a href="../anydb/PageWidget.html#var$entries">$entries</a></li>
+    <li><a href="../anydb/PageWidget.html#var$orderedBy">$orderedBy</a></li>
+    <li><a href="../anydb/PageWidget.html#var$page">$page</a></li>
+    <li><a href="../anydb/PageWidget.html#var$pages">$pages</a></li>
+    <li><a href="../anydb/PageWidget.html#var$start">$start</a></li>
+    <li><a href="../anydb/PageWidget.html#var$total">$total</a></li>
+    <li><a href="../anydb/PageWidget.html#var$_db">$_db</a></li>
+    <li><a href="../anydb/PageWidget.html#var$_queryFunction">$_queryFunction</a></li>
+    <li><a href="../anydb/PageWidget.html#var$_table">$_table</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../anydb/PageWidget.html#methodPageWidget">PageWidget</a></li>
+    <li><a href="../anydb/PageWidget.html#methodget">get</a></li>
+    <li><a href="../anydb/PageWidget.html#methodgetIndex">getIndex</a></li>
+    <li><a href="../anydb/PageWidget.html#methodgetNextLink">getNextLink</a></li>
+    <li><a href="../anydb/PageWidget.html#methodgetOrderDropdown">getOrderDropdown</a></li>
+    <li><a href="../anydb/PageWidget.html#methodgetPageDropdown">getPageDropdown</a></li>
+    <li><a href="../anydb/PageWidget.html#methodgetPrevLink">getPrevLink</a></li>
+    <li><a href="../anydb/PageWidget.html#methodgotoPage">gotoPage</a></li>
+    <li><a href="../anydb/PageWidget.html#methodnextExists">nextExists</a></li>
+    <li><a href="../anydb/PageWidget.html#methodorderBy">orderBy</a></li>
+    <li><a href="../anydb/PageWidget.html#methodpageExists">pageExists</a></li>
+    <li><a href="../anydb/PageWidget.html#methodprevExists">prevExists</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 19]<br />
+Widget class for anyDB<br /><br /><p>With this class you can display db data on serveral html pages.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>2003/09/08</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Lennart Groetzbach &lt;lennartg@web.de&gt; - distributed under the LGPL</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Lennart Groetzbach &lt;<a href="mailto:lennartg@web.de">mailto:lennartg@web.de</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://www.phpclasses.org/anydb">Visit www.phpclasses.org for the latest version</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$end"></a>
+	<p></p>
+	<h4>$end = <span class="value">&nbsp;0</span></h4>
+	<p>[line 61]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$entries"></a>
+	<p></p>
+	<h4>$entries = <span class="value"></span></h4>
+	<p>[line 57]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$orderedBy"></a>
+	<p></p>
+	<h4>$orderedBy = <span class="value"></span></h4>
+	<p>[line 62]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$page"></a>
+	<p></p>
+	<h4>$page = <span class="value">&nbsp;-1</span></h4>
+	<p>[line 58]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$pages"></a>
+	<p></p>
+	<h4>$pages = <span class="value">&nbsp;1</span></h4>
+	<p>[line 59]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$start"></a>
+	<p></p>
+	<h4>$start = <span class="value">&nbsp;0</span></h4>
+	<p>[line 60]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$total"></a>
+	<p></p>
+	<h4>$total = <span class="value"></span></h4>
+	<p>[line 56]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_db"></a>
+	<p></p>
+	<h4>$_db = <span class="value">&nbsp;null</span></h4>
+	<p>[line 66]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_queryFunction"></a>
+	<p></p>
+	<h4>$_queryFunction = <span class="value">&nbsp;null</span></h4>
+	<p>[line 68]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_table"></a>
+	<p></p>
+	<h4>$_table = <span class="value"></span></h4>
+	<p>[line 67]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="methodPageWidget"></a>
+	<h3>constructor PageWidget <span class="smalllinenumber">[line 75]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PageWidget PageWidget(
+mixed
+&$db, mixed
+$function, mixed
+$table, mixed
+$entries)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodget"></a>
+	<h3>method get <span class="smalllinenumber">[line 166]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void get(
+[mixed
+$array = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetIndex"></a>
+	<h3>method getIndex <span class="smalllinenumber">[line 181]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getIndex(
+[mixed
+$separator = ' - '], [mixed
+$makeBold = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetNextLink"></a>
+	<h3>method getNextLink <span class="smalllinenumber">[line 208]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getNextLink(
+[mixed
+$title = 'Next'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetOrderDropdown"></a>
+	<h3>method getOrderDropdown <span class="smalllinenumber">[line 238]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getOrderDropdown(
+[mixed
+$array = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPageDropdown"></a>
+	<h3>method getPageDropdown <span class="smalllinenumber">[line 221]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getPageDropdown(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPrevLink"></a>
+	<h3>method getPrevLink <span class="smalllinenumber">[line 195]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getPrevLink(
+[mixed
+$title = 'Previous'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgotoPage"></a>
+	<h3>method gotoPage <span class="smalllinenumber">[line 133]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void gotoPage(
+mixed
+$page)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnextExists"></a>
+	<h3>method nextExists <span class="smalllinenumber">[line 109]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void nextExists(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodorderBy"></a>
+	<h3>method orderBy <span class="smalllinenumber">[line 149]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void orderBy(
+mixed
+$orderID)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpageExists"></a>
+	<h3>method pageExists <span class="smalllinenumber">[line 123]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void pageExists(
+mixed
+$page)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprevExists"></a>
+	<h3>method prevExists <span class="smalllinenumber">[line 116]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void prevExists(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon,  8 Sep 2003 23:31:47 -0400 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
